@@ -1,11 +1,11 @@
-<!
-      <link rel="icon" type="image/png" href="../logos/ivy_logo_only.png">DOCTYPE html>
+<!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ivy.stateful.optimizers &mdash; Ivy 1.0 documentation</title>
       <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="icon" type="image/png" href="https://github.com/unifyai/unifyai.github.io/blob/master/img/externally_linked/ivy_logo_only.png?raw=true">
       <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -41,72 +41,24 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../background.html">Background</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../design.html">Design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../related_work.html">Related Work</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../extensions.html">Extensions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../roadmap.html">Roadmap</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../contributing.html">Contributing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../deep_dive.html">Deep Dive</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../faq.html">FAQ</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Array</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../array/activations.html">Activations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../array/array_methods.html">Array methods</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../array/conversions.html">Conversions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../array/creation.html">Creation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../array/data_type.html">Data type</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../array/device.html">Device</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../array/elementwise.html">Elementwise</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../array/general.html">General</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../array/gradients.html">Gradients</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../array/image.html">Image</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../array/layers.html">Layers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../array/linear_algebra.html">Linear algebra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../array/losses.html">Losses</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../array/manipulation.html">Manipulation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../array/norms.html">Norms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../array/random.html">Random</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../array/searching.html">Searching</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../array/set.html">Set</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../array/sorting.html">Sorting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../array/statistical.html">Statistical</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../array/utility.html">Utility</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../array/wrapping.html">Wrapping</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Container</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../container/activations.html">Activations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../container/base.html">Base</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../container/container.html">Container</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../container/container_methods.html">Container methods</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../container/creation.html">Creation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../container/data_type.html">Data type</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../container/device.html">Device</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../container/elementwise.html">Elementwise</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../container/general.html">General</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../container/gradients.html">Gradients</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../container/image.html">Image</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../container/layers.html">Layers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../container/linear_algebra.html">Linear algebra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../container/losses.html">Losses</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../container/manipulation.html">Manipulation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../container/norms.html">Norms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../container/random.html">Random</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../container/searching.html">Searching</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../container/set.html">Set</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../container/sorting.html">Sorting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../container/statistical.html">Statistical</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../container/utility.html">Utility</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../container/wrapping.html">Wrapping</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../glossary.html">Glossary</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Functions</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../functional/ivy/experimental.html">Experimental</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../functional/ivy/activations.html">Activations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../functional/ivy/compilation.html">Compilation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../functional/ivy/constants.html">Constants</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../functional/ivy/control_flow_ops.html">Control flow ops</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../functional/ivy/creation.html">Creation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../functional/ivy/data_type.html">Data type</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../functional/ivy/device.html">Device</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../functional/ivy/elementwise.html">Elementwise</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../functional/ivy/experimental.html">Experimental</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../functional/ivy/general.html">General</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../functional/ivy/gradients.html">Gradients</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../functional/ivy/layers.html">Layers</a></li>
@@ -123,16 +75,37 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../functional/ivy/statistical.html">Statistical</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../functional/ivy/utility.html">Utility</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Classes</span></p>
+<p class="caption" role="heading"><span class="caption-text">Data Classes</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../data_classes/container.html">Container</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../data_classes/array.html">Array</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Framework Classes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../stateful/optimizers.html">Optimizers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../stateful/activations.html">Activations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../stateful/converters.html">Converters</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../stateful/initializers.html">Initializers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../stateful/layers.html">Layers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../stateful/module.html">Module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../stateful/norms.html">Norms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../stateful/optimizers.html">Optimizers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../stateful/initializers.html">Initializers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../stateful/converters.html">Converters</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../stateful/sequential.html">Sequential</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../stateful/helpers.html">Helpers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../stateful/norms.html">Norms</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Nested array</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../nested_array/nested_array.html">Nested array</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Testing</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../testing/assertions.html">Assertions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../testing/available_frameworks.html">Available frameworks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../testing/function_testing.html">Function testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../testing/globals.html">Globals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../testing/hypothesis_helpers.html">Hypothesis helpers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../testing/structs.html">Structs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../testing/test_parameter_flags.html">Test parameter flags</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../testing/testing_helpers.html">Testing helpers</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Docs</span></p>
 <ul>
@@ -172,10 +145,12 @@
            <div itemprop="articleBody">
              
   <h1>Source code for ivy.stateful.optimizers</h1><div class="highlight"><pre>
-<span></span><span class="sd">&quot;&quot;&quot;Collection of Ivy optimizers.&quot;&quot;&quot;</span>
+<span></span><span class="c1"># For Review</span>
+<span class="sd">&quot;&quot;&quot;Collection of Ivy optimizers.&quot;&quot;&quot;</span>
 
 <span class="c1"># global</span>
 <span class="kn">import</span> <span class="nn">abc</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Union</span><span class="p">,</span> <span class="n">Optional</span><span class="p">,</span> <span class="n">Callable</span>
 
 <span class="c1"># local</span>
 <span class="kn">import</span> <span class="nn">ivy</span>
@@ -188,16 +163,16 @@
 <div class="viewcode-block" id="Optimizer"><a class="viewcode-back" href="../../../stateful/optimizers/Optimizer.html#ivy.stateful.optimizers.Optimizer">[docs]</a><span class="k">class</span> <span class="nc">Optimizer</span><span class="p">(</span><span class="n">abc</span><span class="o">.</span><span class="n">ABC</span><span class="p">):</span>
 <div class="viewcode-block" id="Optimizer.__init__"><a class="viewcode-back" href="../../../stateful/optimizers/Optimizer.html#ivy.stateful.optimizers.Optimizer.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
-        <span class="n">lr</span><span class="p">,</span>
-        <span class="n">inplace</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-        <span class="n">stop_gradients</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-        <span class="n">init_on_first_step</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
-        <span class="n">compile_on_next_step</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
-        <span class="n">fallback_to_non_compiled</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
-        <span class="n">device</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+        <span class="n">lr</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">float</span><span class="p">,</span> <span class="n">Callable</span><span class="p">],</span>
+        <span class="n">inplace</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
+        <span class="n">stop_gradients</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
+        <span class="n">init_on_first_step</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+        <span class="n">compile_on_next_step</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+        <span class="n">fallback_to_non_compiled</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+        <span class="n">device</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="n">ivy</span><span class="o">.</span><span class="n">Device</span><span class="p">,</span> <span class="n">ivy</span><span class="o">.</span><span class="n">NativeDevice</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
     <span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">        Construct an general Optimizer. This is an abstract class, and must be derived.</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Construct a general Optimizer. This is an abstract class, and must be derived.</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -207,19 +182,20 @@
 <span class="sd">            Whether to update the variables in-place, or to create new variable handles.</span>
 <span class="sd">            This is only relevant for frameworks with stateful variables such as</span>
 <span class="sd">            PyTorch.</span>
-<span class="sd">            Default is True, provided the backend framework supports it.</span>
+<span class="sd">            Default is ``True``, provided the backend framework supports it.</span>
 <span class="sd">        stop_gradients</span>
 <span class="sd">            Whether to stop the gradients of the variables after each gradient step.</span>
-<span class="sd">            Default is True.</span>
+<span class="sd">            Default is ``True``.</span>
 <span class="sd">        init_on_first_step</span>
-<span class="sd">            Whether the optimizer is initialized on the first step. Default is False.</span>
+<span class="sd">            Whether the optimizer is initialized on the first step.</span>
+<span class="sd">            Default is ``False``.</span>
 <span class="sd">        compile_on_next_step</span>
-<span class="sd">            Whether to compile the optimizer on the next step. Default is False.</span>
+<span class="sd">            Whether to compile the optimizer on the next step. Default is ``False``.</span>
 <span class="sd">        fallback_to_non_compiled</span>
 <span class="sd">            Whether to fall back to non-compiled forward call in the case that an error</span>
-<span class="sd">            is raised during the compiled forward pass. Default is True.</span>
+<span class="sd">            is raised during the compiled forward pass. Default is ``True``.</span>
 <span class="sd">        device</span>
-<span class="sd">            device on which to create the layer&#39;s variables &#39;cuda:0&#39;, &#39;cuda:1&#39;, &#39;cpu&#39;</span>
+<span class="sd">            Device on which to create the layer&#39;s variables &#39;cuda:0&#39;, &#39;cuda:1&#39;, &#39;cpu&#39;</span>
 <span class="sd">            etc. (Default value = None)</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_lr</span> <span class="o">=</span> <span class="n">lr</span>
@@ -240,8 +216,8 @@
     <span class="c1"># Abstract #</span>
 
     <span class="nd">@abc</span><span class="o">.</span><span class="n">abstractmethod</span>
-    <span class="k">def</span> <span class="nf">_step</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">grads</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">_step</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">v</span><span class="p">:</span> <span class="n">ivy</span><span class="o">.</span><span class="n">Container</span><span class="p">,</span> <span class="n">grads</span><span class="p">:</span> <span class="n">ivy</span><span class="o">.</span><span class="n">Container</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Update nested variables container v from update step, using nested grads</span>
 <span class="sd">        container. Override this abstract method with child class custom</span>
 <span class="sd">        implementation.</span>
@@ -259,48 +235,15 @@
 <span class="sd">            The updated variables, following update step.</span>
 
 <span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">raise</span> <span class="ne">NotImplementedError</span>
+        <span class="k">raise</span> <span class="n">ivy</span><span class="o">.</span><span class="n">exceptions</span><span class="o">.</span><span class="n">IvyNotImplementedException</span>
 
     <span class="c1"># Given #</span>
 
-    <span class="k">def</span> <span class="nf">_step_fn</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">grads</span><span class="p">,</span> <span class="n">ignore_missing</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
-
-<span class="sd">        Parameters</span>
-<span class="sd">        ----------</span>
-<span class="sd">        v</span>
-
-<span class="sd">        grads</span>
-
-<span class="sd">        ignore_missing</span>
-
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">if</span> <span class="n">ignore_missing</span><span class="p">:</span>
-            <span class="k">return</span> <span class="n">v</span><span class="o">.</span><span class="n">set_at_keys</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_step</span><span class="p">(</span><span class="n">v</span><span class="o">.</span><span class="n">at_key_chains</span><span class="p">(</span><span class="n">grads</span><span class="p">),</span> <span class="n">grads</span><span class="p">))</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_step</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">grads</span><span class="p">)</span>
-
-    <span class="c1"># Public #</span>
-    <span class="c1"># -------#</span>
-
-    <span class="c1"># Abstract #</span>
-
-<div class="viewcode-block" id="Optimizer.set_state"><a class="viewcode-back" href="../../../stateful/optimizers/Optimizer.html#ivy.stateful.optimizers.Optimizer.set_state">[docs]</a>    <span class="nd">@abc</span><span class="o">.</span><span class="n">abstractmethod</span>
-    <span class="k">def</span> <span class="nf">set_state</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">state</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">        Set state of the optimizer.</span>
-
-<span class="sd">        Parameters</span>
-<span class="sd">        ----------</span>
-<span class="sd">        state</span>
-<span class="sd">            Nested state to update.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">raise</span> <span class="ne">NotImplementedError</span></div>
-
-    <span class="c1"># Given #</span>
-
-<div class="viewcode-block" id="Optimizer.step"><a class="viewcode-back" href="../../../stateful/optimizers/Optimizer.html#ivy.stateful.optimizers.Optimizer.step">[docs]</a>    <span class="k">def</span> <span class="nf">step</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">grads</span><span class="p">,</span> <span class="n">ignore_missing</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">        Update nested variables container v from overriden private self._step</span>
+    <span class="k">def</span> <span class="nf">_step_fn</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="n">v</span><span class="p">:</span> <span class="n">ivy</span><span class="o">.</span><span class="n">Container</span><span class="p">,</span> <span class="n">grads</span><span class="p">:</span> <span class="n">ivy</span><span class="o">.</span><span class="n">Container</span><span class="p">,</span> <span class="n">ignore_missing</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Calls the custom child step function implementation</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -311,7 +254,47 @@
 <span class="sd">        ignore_missing</span>
 <span class="sd">            Whether to ignore keys missing from the gradients which exist in</span>
 <span class="sd">            the variables.</span>
-<span class="sd">            Default is False.</span>
+<span class="sd">            Default is ``False``</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">ignore_missing</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">v</span><span class="o">.</span><span class="n">cont_set_at_keys</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_step</span><span class="p">(</span><span class="n">v</span><span class="o">.</span><span class="n">cont_at_key_chains</span><span class="p">(</span><span class="n">grads</span><span class="p">),</span> <span class="n">grads</span><span class="p">))</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_step</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">grads</span><span class="p">)</span>
+
+    <span class="c1"># Public #</span>
+    <span class="c1"># -------#</span>
+
+    <span class="c1"># Abstract #</span>
+
+<div class="viewcode-block" id="Optimizer.set_state"><a class="viewcode-back" href="../../../stateful/optimizers/Optimizer.html#ivy.stateful.optimizers.Optimizer.set_state">[docs]</a>    <span class="nd">@abc</span><span class="o">.</span><span class="n">abstractmethod</span>
+    <span class="k">def</span> <span class="nf">set_state</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">state</span><span class="p">:</span> <span class="n">ivy</span><span class="o">.</span><span class="n">Container</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Set state of the optimizer.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        state</span>
+<span class="sd">            Nested state to update.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">raise</span> <span class="n">ivy</span><span class="o">.</span><span class="n">exceptions</span><span class="o">.</span><span class="n">IvyNotImplementedException</span></div>
+
+    <span class="c1"># Given #</span>
+
+<div class="viewcode-block" id="Optimizer.step"><a class="viewcode-back" href="../../../stateful/optimizers/Optimizer.html#ivy.stateful.optimizers.Optimizer.step">[docs]</a>    <span class="k">def</span> <span class="nf">step</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="n">v</span><span class="p">:</span> <span class="n">ivy</span><span class="o">.</span><span class="n">Container</span><span class="p">,</span> <span class="n">grads</span><span class="p">:</span> <span class="n">ivy</span><span class="o">.</span><span class="n">Container</span><span class="p">,</span> <span class="n">ignore_missing</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Update nested variables container v from overridden private self._step</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        v</span>
+<span class="sd">            Nested variables to update.</span>
+<span class="sd">        grads</span>
+<span class="sd">            Nested gradients to update.</span>
+<span class="sd">        ignore_missing</span>
+<span class="sd">            Whether to ignore keys missing from the gradients which exist in</span>
+<span class="sd">            the variables.</span>
+<span class="sd">            Default is ``False``.</span>
 
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
@@ -331,28 +314,28 @@
 <div class="viewcode-block" id="SGD"><a class="viewcode-back" href="../../../stateful/optimizers/SGD.html#ivy.stateful.optimizers.SGD">[docs]</a><span class="k">class</span> <span class="nc">SGD</span><span class="p">(</span><span class="n">Optimizer</span><span class="p">):</span>
 <div class="viewcode-block" id="SGD.__init__"><a class="viewcode-back" href="../../../stateful/optimizers/SGD.html#ivy.stateful.optimizers.SGD.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
-        <span class="n">lr</span><span class="o">=</span><span class="k">lambda</span><span class="p">:</span> <span class="mf">1e-4</span><span class="p">,</span>
-        <span class="n">inplace</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-        <span class="n">stop_gradients</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-        <span class="n">compile_on_next_step</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+        <span class="n">lr</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">1e-4</span><span class="p">,</span>
+        <span class="n">inplace</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
+        <span class="n">stop_gradients</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
+        <span class="n">compile_on_next_step</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
     <span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Construct a Stochastic-Gradient-Descent (SGD) optimizer.</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
 <span class="sd">        lr</span>
-<span class="sd">            Learning rate, default is 1e-4.</span>
+<span class="sd">            Learning rate, default is ``1e-4``.</span>
 <span class="sd">        inplace</span>
 <span class="sd">            Whether to update the variables in-place, or to create new variable handles.</span>
 <span class="sd">            This is only relevant for frameworks with stateful variables such as</span>
 <span class="sd">            PyTorch.</span>
-<span class="sd">            Default is True, provided the backend framework supports it.</span>
+<span class="sd">            Default is ``True``, provided the backend framework supports it.</span>
 <span class="sd">        stop_gradients</span>
 <span class="sd">            Whether to stop the gradients of the variables after each gradient step.</span>
-<span class="sd">            Default is True.</span>
+<span class="sd">            Default is ``True``.</span>
 <span class="sd">        compile_on_next_step</span>
-<span class="sd">            Whether to compile the optimizer on the next step. Default is False.</span>
+<span class="sd">            Whether to compile the optimizer on the next step. Default is ``False``.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="n">Optimizer</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
             <span class="bp">self</span><span class="p">,</span> <span class="n">lr</span><span class="p">,</span> <span class="n">inplace</span><span class="p">,</span> <span class="n">stop_gradients</span><span class="p">,</span> <span class="n">compile_on_next_step</span><span class="o">=</span><span class="n">compile_on_next_step</span>
@@ -360,8 +343,8 @@
 
     <span class="c1"># Custom Step</span>
 
-    <span class="k">def</span> <span class="nf">_step</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">grads</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">_step</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">v</span><span class="p">:</span> <span class="n">ivy</span><span class="o">.</span><span class="n">Container</span><span class="p">,</span> <span class="n">grads</span><span class="p">:</span> <span class="n">ivy</span><span class="o">.</span><span class="n">Container</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Update nested variables container v by gradient descent step,</span>
 <span class="sd">        using nested gradients container.</span>
 
@@ -382,12 +365,11 @@
             <span class="n">v</span><span class="p">,</span>
             <span class="n">grads</span><span class="p">,</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">_lr</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_lr</span><span class="p">,</span> <span class="nb">float</span><span class="p">)</span> <span class="k">else</span> <span class="bp">self</span><span class="o">.</span><span class="n">_lr</span><span class="p">(),</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">_inplace</span><span class="p">,</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">_stop_gradients</span><span class="p">,</span>
+            <span class="n">stop_gradients</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_stop_gradients</span><span class="p">,</span>
         <span class="p">)</span>
 
-<div class="viewcode-block" id="SGD.set_state"><a class="viewcode-back" href="../../../stateful/optimizers/SGD.html#ivy.stateful.optimizers.SGD.set_state">[docs]</a>    <span class="k">def</span> <span class="nf">set_state</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">state</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+<div class="viewcode-block" id="SGD.set_state"><a class="viewcode-back" href="../../../stateful/optimizers/SGD.html#ivy.stateful.optimizers.SGD.set_state">[docs]</a>    <span class="k">def</span> <span class="nf">set_state</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">state</span><span class="p">:</span> <span class="n">ivy</span><span class="o">.</span><span class="n">Container</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Set state of the optimizer.</span>
 
 <span class="sd">        Parameters</span>
@@ -406,31 +388,31 @@
 <div class="viewcode-block" id="LARS"><a class="viewcode-back" href="../../../stateful/optimizers/LARS.html#ivy.stateful.optimizers.LARS">[docs]</a><span class="k">class</span> <span class="nc">LARS</span><span class="p">(</span><span class="n">Optimizer</span><span class="p">):</span>
 <div class="viewcode-block" id="LARS.__init__"><a class="viewcode-back" href="../../../stateful/optimizers/LARS.html#ivy.stateful.optimizers.LARS.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
-        <span class="n">lr</span><span class="o">=</span><span class="k">lambda</span><span class="p">:</span> <span class="mf">1e-4</span><span class="p">,</span>
-        <span class="n">decay_lambda</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
-        <span class="n">inplace</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-        <span class="n">stop_gradients</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-        <span class="n">compile_on_next_step</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+        <span class="n">lr</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">1e-4</span><span class="p">,</span>
+        <span class="n">decay_lambda</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="n">inplace</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
+        <span class="n">stop_gradients</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
+        <span class="n">compile_on_next_step</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
     <span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">        Construct a Layerwise Adaptive Rate Scaling (LARS) optimizer.</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Construct a Layer-wise Adaptive Rate Scaling (LARS) optimizer.</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
 <span class="sd">        lr</span>
-<span class="sd">            Learning rate, default is 1e-4.</span>
+<span class="sd">            Learning rate, default is ``1e-4``.</span>
 <span class="sd">        decay_lambda</span>
-<span class="sd">            The factor used for weight decay. Default is zero.</span>
+<span class="sd">            The factor used for weight decay. Default is ``0``.</span>
 <span class="sd">        inplace</span>
 <span class="sd">            Whether to update the variables in-place, or to create new variable handles.</span>
 <span class="sd">            This is only relevant for frameworks with stateful variables such as</span>
 <span class="sd">            PyTorch.</span>
-<span class="sd">            Default is True, provided the backend framework supports it.</span>
+<span class="sd">            Default is ``True``, provided the backend framework supports it.</span>
 <span class="sd">        stop_gradients</span>
 <span class="sd">            Whether to stop the gradients of the variables after each gradient step.</span>
-<span class="sd">            Default is True.</span>
+<span class="sd">            Default is ``True``.</span>
 <span class="sd">        compile_on_next_step</span>
-<span class="sd">            Whether to compile the optimizer on the next step. Default is False.</span>
+<span class="sd">            Whether to compile the optimizer on the next step. Default is ``False``.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_decay_lambda</span> <span class="o">=</span> <span class="n">decay_lambda</span>
         <span class="n">Optimizer</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
@@ -439,8 +421,8 @@
 
     <span class="c1"># Custom Step</span>
 
-    <span class="k">def</span> <span class="nf">_step</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">grads</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">_step</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">v</span><span class="p">:</span> <span class="n">ivy</span><span class="o">.</span><span class="n">Container</span><span class="p">,</span> <span class="n">grads</span><span class="p">:</span> <span class="n">ivy</span><span class="o">.</span><span class="n">Container</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Update nested variables container v by gradient descent step, using nested</span>
 <span class="sd">        gradients container.</span>
 
@@ -461,13 +443,12 @@
             <span class="n">v</span><span class="p">,</span>
             <span class="n">grads</span><span class="p">,</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">_lr</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_lr</span><span class="p">,</span> <span class="nb">float</span><span class="p">)</span> <span class="k">else</span> <span class="bp">self</span><span class="o">.</span><span class="n">_lr</span><span class="p">(),</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">_decay_lambda</span><span class="p">,</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">_inplace</span><span class="p">,</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">_stop_gradients</span><span class="p">,</span>
+            <span class="n">decay_lambda</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_decay_lambda</span><span class="p">,</span>
+            <span class="n">stop_gradients</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_stop_gradients</span><span class="p">,</span>
         <span class="p">)</span>
 
-<div class="viewcode-block" id="LARS.set_state"><a class="viewcode-back" href="../../../stateful/optimizers/LARS.html#ivy.stateful.optimizers.LARS.set_state">[docs]</a>    <span class="k">def</span> <span class="nf">set_state</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">state</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+<div class="viewcode-block" id="LARS.set_state"><a class="viewcode-back" href="../../../stateful/optimizers/LARS.html#ivy.stateful.optimizers.LARS.set_state">[docs]</a>    <span class="k">def</span> <span class="nf">set_state</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">state</span><span class="p">:</span> <span class="n">ivy</span><span class="o">.</span><span class="n">Container</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Set state of the optimizer.</span>
 
 <span class="sd">        Parameters</span>
@@ -486,57 +467,59 @@
 <div class="viewcode-block" id="Adam"><a class="viewcode-back" href="../../../stateful/optimizers/Adam.html#ivy.stateful.optimizers.Adam">[docs]</a><span class="k">class</span> <span class="nc">Adam</span><span class="p">(</span><span class="n">Optimizer</span><span class="p">):</span>
 <div class="viewcode-block" id="Adam.__init__"><a class="viewcode-back" href="../../../stateful/optimizers/Adam.html#ivy.stateful.optimizers.Adam.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
-        <span class="n">lr</span><span class="o">=</span><span class="mf">1e-4</span><span class="p">,</span>
-        <span class="n">beta1</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span>
-        <span class="n">beta2</span><span class="o">=</span><span class="mf">0.999</span><span class="p">,</span>
-        <span class="n">epsilon</span><span class="o">=</span><span class="mf">1e-07</span><span class="p">,</span>
-        <span class="n">inplace</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-        <span class="n">stop_gradients</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-        <span class="n">compile_on_next_step</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
-        <span class="n">device</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+        <span class="n">lr</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">1e-4</span><span class="p">,</span>
+        <span class="n">beta1</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">0.9</span><span class="p">,</span>
+        <span class="n">beta2</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">0.999</span><span class="p">,</span>
+        <span class="n">epsilon</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">1e-07</span><span class="p">,</span>
+        <span class="n">inplace</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
+        <span class="n">stop_gradients</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
+        <span class="n">compile_on_next_step</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+        <span class="n">device</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="n">ivy</span><span class="o">.</span><span class="n">Device</span><span class="p">,</span> <span class="n">ivy</span><span class="o">.</span><span class="n">NativeDevice</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
     <span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Construct an ADAM optimizer.</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
 <span class="sd">        lr</span>
-<span class="sd">            Learning rate, default is 1e-4.</span>
+<span class="sd">            Learning rate, default is ``1e-4``.</span>
 <span class="sd">        beta1</span>
-<span class="sd">            gradient forgetting factor, default is 0.9</span>
+<span class="sd">            gradient forgetting factor, default is ``0.9``</span>
 <span class="sd">        beta2</span>
-<span class="sd">            second moment of gradient forgetting factor, default is 0.999</span>
+<span class="sd">            second moment of gradient forgetting factor, default is ``0.999``</span>
 <span class="sd">        epsilon</span>
-<span class="sd">            divisor during adam update, preventing division by zero, default is 1e-07</span>
+<span class="sd">            divisor during adam update, preventing division by zero,</span>
+<span class="sd">            default is ``1e-07``</span>
 <span class="sd">        inplace</span>
 <span class="sd">            Whether to update the variables in-place, or to create new variable handles.</span>
 <span class="sd">            This is only relevant for frameworks with stateful variables such as</span>
 <span class="sd">            PyTorch.</span>
-<span class="sd">            Default is True, provided the backend framework supports it.</span>
+<span class="sd">            Default is ``True``, provided the backend framework supports it.</span>
 <span class="sd">        stop_gradients</span>
 <span class="sd">            Whether to stop the gradients of the variables after each gradient step.</span>
-<span class="sd">            Default is True.</span>
+<span class="sd">            Default is ``True``.</span>
 <span class="sd">        compile_on_next_step</span>
-<span class="sd">            Whether to compile the optimizer on the next step. Default is False.</span>
+<span class="sd">            Whether to compile the optimizer on the next step. Default is ``False``.</span>
 <span class="sd">        device</span>
-<span class="sd">            device on which to create the layer&#39;s variables &#39;cuda:0&#39;, &#39;cuda:1&#39;, &#39;cpu&#39;</span>
+<span class="sd">            Device on which to create the layer&#39;s variables &#39;cuda:0&#39;, &#39;cuda:1&#39;, &#39;cpu&#39;</span>
 <span class="sd">            etc. (Default value = None)</span>
 <span class="sd">        &quot;&quot;&quot;</span>
-        <span class="n">Optimizer</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
-            <span class="bp">self</span><span class="p">,</span> <span class="n">lr</span><span class="p">,</span> <span class="n">inplace</span><span class="p">,</span> <span class="n">stop_gradients</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="n">compile_on_next_step</span><span class="p">,</span> <span class="n">device</span>
-        <span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_beta1</span> <span class="o">=</span> <span class="n">beta1</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_beta2</span> <span class="o">=</span> <span class="n">beta2</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_epsilon</span> <span class="o">=</span> <span class="n">epsilon</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_mw</span> <span class="o">=</span> <span class="kc">None</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_vw</span> <span class="o">=</span> <span class="kc">None</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_first_pass</span> <span class="o">=</span> <span class="kc">True</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_should_compile</span> <span class="o">=</span> <span class="kc">False</span></div>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_should_compile</span> <span class="o">=</span> <span class="kc">False</span>
+
+        <span class="n">Optimizer</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="n">lr</span><span class="p">,</span> <span class="n">inplace</span><span class="p">,</span> <span class="n">stop_gradients</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="n">compile_on_next_step</span><span class="p">,</span> <span class="n">device</span><span class="o">=</span><span class="n">device</span>
+        <span class="p">)</span></div>
 
     <span class="c1"># Custom Step</span>
 
-    <span class="k">def</span> <span class="nf">_step</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">grads</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">_step</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">v</span><span class="p">:</span> <span class="n">ivy</span><span class="o">.</span><span class="n">Container</span><span class="p">,</span> <span class="n">grads</span><span class="p">:</span> <span class="n">ivy</span><span class="o">.</span><span class="n">Container</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Update nested variables container v by Adam update step,</span>
 <span class="sd">        using nested grads container.</span>
 
@@ -557,6 +540,7 @@
             <span class="bp">self</span><span class="o">.</span><span class="n">_mw</span> <span class="o">=</span> <span class="n">grads</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">_vw</span> <span class="o">=</span> <span class="n">grads</span><span class="o">**</span><span class="mi">2</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">_first_pass</span> <span class="o">=</span> <span class="kc">False</span>
+
         <span class="n">new_v</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mw</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_vw</span> <span class="o">=</span> <span class="n">ivy</span><span class="o">.</span><span class="n">adam_update</span><span class="p">(</span>
             <span class="n">v</span><span class="p">,</span>
             <span class="n">grads</span><span class="p">,</span>
@@ -564,16 +548,15 @@
             <span class="bp">self</span><span class="o">.</span><span class="n">_mw</span><span class="p">,</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">_vw</span><span class="p">,</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">_count</span><span class="p">,</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">_beta1</span><span class="p">,</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">_beta2</span><span class="p">,</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">_epsilon</span><span class="p">,</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">_inplace</span><span class="p">,</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">_stop_gradients</span><span class="p">,</span>
+            <span class="n">beta1</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_beta1</span><span class="p">,</span>
+            <span class="n">beta2</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_beta2</span><span class="p">,</span>
+            <span class="n">epsilon</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_epsilon</span><span class="p">,</span>
+            <span class="n">stop_gradients</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_stop_gradients</span><span class="p">,</span>
         <span class="p">)</span>
         <span class="k">return</span> <span class="n">new_v</span>
 
-<div class="viewcode-block" id="Adam.set_state"><a class="viewcode-back" href="../../../stateful/optimizers/Adam.html#ivy.stateful.optimizers.Adam.set_state">[docs]</a>    <span class="k">def</span> <span class="nf">set_state</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">state</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+<div class="viewcode-block" id="Adam.set_state"><a class="viewcode-back" href="../../../stateful/optimizers/Adam.html#ivy.stateful.optimizers.Adam.set_state">[docs]</a>    <span class="k">def</span> <span class="nf">set_state</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">state</span><span class="p">:</span> <span class="n">ivy</span><span class="o">.</span><span class="n">Container</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Set state of the optimizer.</span>
 
 <span class="sd">        Parameters</span>
@@ -593,51 +576,52 @@
 <div class="viewcode-block" id="LAMB"><a class="viewcode-back" href="../../../stateful/optimizers/LAMB.html#ivy.stateful.optimizers.LAMB">[docs]</a><span class="k">class</span> <span class="nc">LAMB</span><span class="p">(</span><span class="n">Optimizer</span><span class="p">):</span>
 <div class="viewcode-block" id="LAMB.__init__"><a class="viewcode-back" href="../../../stateful/optimizers/LAMB.html#ivy.stateful.optimizers.LAMB.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
-        <span class="n">lr</span><span class="o">=</span><span class="mf">1e-4</span><span class="p">,</span>
-        <span class="n">beta1</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span>
-        <span class="n">beta2</span><span class="o">=</span><span class="mf">0.999</span><span class="p">,</span>
-        <span class="n">epsilon</span><span class="o">=</span><span class="mf">1e-07</span><span class="p">,</span>
-        <span class="n">max_trust_ratio</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
-        <span class="n">decay_lambda</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
-        <span class="n">inplace</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-        <span class="n">stop_gradients</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-        <span class="n">compile_on_next_step</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
-        <span class="n">device</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+        <span class="n">lr</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">1e-4</span><span class="p">,</span>
+        <span class="n">beta1</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">0.9</span><span class="p">,</span>
+        <span class="n">beta2</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">0.999</span><span class="p">,</span>
+        <span class="n">epsilon</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">1e-07</span><span class="p">,</span>
+        <span class="n">max_trust_ratio</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span>
+        <span class="n">decay_lambda</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="n">inplace</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
+        <span class="n">stop_gradients</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
+        <span class="n">compile_on_next_step</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+        <span class="n">device</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="n">ivy</span><span class="o">.</span><span class="n">Device</span><span class="p">,</span> <span class="n">ivy</span><span class="o">.</span><span class="n">NativeDevice</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
     <span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Construct an LAMB optimizer.</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
 <span class="sd">        lr</span>
-<span class="sd">            Learning rate, default is 1e-4.</span>
+<span class="sd">            Learning rate, default is ``1e-4``.</span>
 <span class="sd">        beta1</span>
-<span class="sd">            gradient forgetting factor, default is 0.9</span>
+<span class="sd">            gradient forgetting factor, default is ``0.9``</span>
 <span class="sd">        beta2</span>
-<span class="sd">            second moment of gradient forgetting factor, default is 0.999</span>
+<span class="sd">            second moment of gradient forgetting factor, default is ``0.999``</span>
 <span class="sd">        epsilon</span>
-<span class="sd">            divisor during adam update, preventing division by zero, default is 1e-07</span>
+<span class="sd">            divisor during adam update, preventing division by zero,</span>
+<span class="sd">            default is ``1e-07``</span>
 <span class="sd">        max_trust_ratio</span>
 <span class="sd">            The max value of the trust ratio; the ratio between the norm of the layer</span>
-<span class="sd">            weights and norm of gradients update. Default is 10.</span>
+<span class="sd">            weights and norm of gradients update. Default is ``10``.</span>
 <span class="sd">        decay_lambda</span>
-<span class="sd">            The factor used for weight decay. Default is zero.</span>
+<span class="sd">            The factor used for weight decay. Default is ``0``.</span>
 <span class="sd">        inplace</span>
 <span class="sd">            Whether to update the variables in-place, or to create new variable handles.</span>
 <span class="sd">            This is only relevant for frameworks with stateful variables such as</span>
 <span class="sd">            PyTorch.</span>
-<span class="sd">            Default is True, provided the backend framework supports it.</span>
+<span class="sd">            Default is ``True``, provided the backend framework supports it.</span>
 <span class="sd">        stop_gradients</span>
 <span class="sd">            Whether to stop the gradients of the variables after each gradient step.</span>
-<span class="sd">            Default is True.</span>
+<span class="sd">            Default is ``True``.</span>
 <span class="sd">        compile_on_next_step</span>
-<span class="sd">            Whether to compile the optimizer on the next step. Default is False.</span>
+<span class="sd">            Whether to compile the optimizer on the next step. Default is ``False``.</span>
 <span class="sd">        device</span>
-<span class="sd">            device on which to create the layer&#39;s variables &#39;cuda:0&#39;, &#39;cuda:1&#39;, &#39;cpu&#39;</span>
+<span class="sd">            Device on which to create the layer&#39;s variables &#39;cuda:0&#39;, &#39;cuda:1&#39;, &#39;cpu&#39;</span>
 <span class="sd">            etc. (Default value = None)</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="n">Optimizer</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
-            <span class="bp">self</span><span class="p">,</span> <span class="n">lr</span><span class="p">,</span> <span class="n">inplace</span><span class="p">,</span> <span class="n">stop_gradients</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="n">compile_on_next_step</span><span class="p">,</span> <span class="n">device</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="n">lr</span><span class="p">,</span> <span class="n">inplace</span><span class="p">,</span> <span class="n">stop_gradients</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="n">compile_on_next_step</span><span class="p">,</span> <span class="n">device</span><span class="o">=</span><span class="n">device</span>
         <span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_beta1</span> <span class="o">=</span> <span class="n">beta1</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_beta2</span> <span class="o">=</span> <span class="n">beta2</span>
@@ -650,8 +634,8 @@
 
     <span class="c1"># Custom Step</span>
 
-    <span class="k">def</span> <span class="nf">_step</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">grads</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">_step</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">v</span><span class="p">:</span> <span class="n">ivy</span><span class="o">.</span><span class="n">Container</span><span class="p">,</span> <span class="n">grads</span><span class="p">:</span> <span class="n">ivy</span><span class="o">.</span><span class="n">Container</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Update nested variables container v by LAMB update step,</span>
 <span class="sd">        using nested grads container.</span>
 
@@ -671,6 +655,7 @@
             <span class="bp">self</span><span class="o">.</span><span class="n">_mw</span> <span class="o">=</span> <span class="n">grads</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">_vw</span> <span class="o">=</span> <span class="n">grads</span><span class="o">**</span><span class="mi">2</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">_first_pass</span> <span class="o">=</span> <span class="kc">False</span>
+
         <span class="n">new_v</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mw</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_vw</span> <span class="o">=</span> <span class="n">ivy</span><span class="o">.</span><span class="n">lamb_update</span><span class="p">(</span>
             <span class="n">v</span><span class="p">,</span>
             <span class="n">grads</span><span class="p">,</span>
@@ -678,18 +663,17 @@
             <span class="bp">self</span><span class="o">.</span><span class="n">_mw</span><span class="p">,</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">_vw</span><span class="p">,</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">_count</span><span class="p">,</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">_beta1</span><span class="p">,</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">_beta2</span><span class="p">,</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">_epsilon</span><span class="p">,</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">_max_trust_ratio</span><span class="p">,</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">_decay_lambda</span><span class="p">,</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">_inplace</span><span class="p">,</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">_stop_gradients</span><span class="p">,</span>
+            <span class="n">beta1</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_beta1</span><span class="p">,</span>
+            <span class="n">beta2</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_beta2</span><span class="p">,</span>
+            <span class="n">epsilon</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_epsilon</span><span class="p">,</span>
+            <span class="n">max_trust_ratio</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_max_trust_ratio</span><span class="p">,</span>
+            <span class="n">decay_lambda</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_decay_lambda</span><span class="p">,</span>
+            <span class="n">stop_gradients</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_stop_gradients</span><span class="p">,</span>
         <span class="p">)</span>
         <span class="k">return</span> <span class="n">new_v</span>
 
-<div class="viewcode-block" id="LAMB.set_state"><a class="viewcode-back" href="../../../stateful/optimizers/LAMB.html#ivy.stateful.optimizers.LAMB.set_state">[docs]</a>    <span class="k">def</span> <span class="nf">set_state</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">state</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Set state of the optimizer.</span>
+<div class="viewcode-block" id="LAMB.set_state"><a class="viewcode-back" href="../../../stateful/optimizers/LAMB.html#ivy.stateful.optimizers.LAMB.set_state">[docs]</a>    <span class="k">def</span> <span class="nf">set_state</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">state</span><span class="p">:</span> <span class="n">ivy</span><span class="o">.</span><span class="n">Container</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Set state of the optimizer.</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -712,7 +696,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2020, Ivy Team.</p>
+    <p>&#169; Copyright 2020-2023, Ivy Team.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

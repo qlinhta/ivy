@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Building the Docs &mdash; Ivy 1.0 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="icon" type="image/png" href="https://github.com/unifyai/unifyai.github.io/blob/master/img/externally_linked/ivy_logo_only.png?raw=true">
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
-
-      <link rel="icon" type="image/png" href="../logos/ivy_logo_only.png">  <!--[if lt IE 9]>
+  <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
@@ -22,7 +22,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Deep Dive" href="../deep_dive.html" />
-    <link rel="prev" title="The Basics" href="1_the_basics.html" /> 
+    <link rel="prev" title="The Basics" href="the_basics.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -44,22 +44,23 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../background.html">Background</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../design.html">Design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../related_work.html">Related Work</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../extensions.html">Extensions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../roadmap.html">Roadmap</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../contributing.html">Contributing</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="0_setting_up.html">Setting Up</a></li>
-<li class="toctree-l2"><a class="reference internal" href="1_the_basics.html">The Basics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setting_up.html">Setting Up</a></li>
+<li class="toctree-l2"><a class="reference internal" href="the_basics.html">The Basics</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Building the Docs</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#building-the-docs-with-docker">Building the Docs with Docker</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#dockerless-doc-building">Dockerless Doc-building</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#using-miniconda">Using miniconda</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#using-venv">Using venv</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id1">Building the docs</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#working-of-the-documentation-building-pipeline">Working of the Documentation Building Pipeline</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#make-docs-sh">make_docs.sh:</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#entrypoint-sh">entrypoint.sh:</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id1">_make_docs.sh:</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id2">_make_docs.sh:</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#generate-src-rst-files-py">generate_src_rst_files.py:</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#sphinx-build-py">sphinx-build.py</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#correct-built-html-files-py">correct_built_html_files.py</a></li>
@@ -69,72 +70,26 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../deep_dive.html">Deep Dive</a></li>
-<li class="toctree-l2"><a class="reference internal" href="4_open_tasks.html">Open Tasks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="open_tasks.html">Open Tasks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="applied_libraries.html">Applied Libraries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="helpful_resources.html">Helpful Resources</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../deep_dive.html">Deep Dive</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Array</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../array/activations.html">Activations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../array/array_methods.html">Array methods</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../array/conversions.html">Conversions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../array/creation.html">Creation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../array/data_type.html">Data type</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../array/device.html">Device</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../array/elementwise.html">Elementwise</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../array/general.html">General</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../array/gradients.html">Gradients</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../array/image.html">Image</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../array/layers.html">Layers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../array/linear_algebra.html">Linear algebra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../array/losses.html">Losses</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../array/manipulation.html">Manipulation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../array/norms.html">Norms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../array/random.html">Random</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../array/searching.html">Searching</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../array/set.html">Set</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../array/sorting.html">Sorting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../array/statistical.html">Statistical</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../array/utility.html">Utility</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../array/wrapping.html">Wrapping</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">Container</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../container/activations.html">Activations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../container/base.html">Base</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../container/container.html">Container</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../container/container_methods.html">Container methods</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../container/creation.html">Creation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../container/data_type.html">Data type</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../container/device.html">Device</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../container/elementwise.html">Elementwise</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../container/general.html">General</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../container/gradients.html">Gradients</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../container/image.html">Image</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../container/layers.html">Layers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../container/linear_algebra.html">Linear algebra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../container/losses.html">Losses</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../container/manipulation.html">Manipulation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../container/norms.html">Norms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../container/random.html">Random</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../container/searching.html">Searching</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../container/set.html">Set</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../container/sorting.html">Sorting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../container/statistical.html">Statistical</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../container/utility.html">Utility</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../container/wrapping.html">Wrapping</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Functions</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../functional/ivy/experimental.html">Experimental</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../functional/ivy/activations.html">Activations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../functional/ivy/compilation.html">Compilation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../functional/ivy/constants.html">Constants</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../functional/ivy/control_flow_ops.html">Control flow ops</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../functional/ivy/creation.html">Creation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../functional/ivy/data_type.html">Data type</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../functional/ivy/device.html">Device</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../functional/ivy/elementwise.html">Elementwise</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../functional/ivy/experimental.html">Experimental</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../functional/ivy/general.html">General</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../functional/ivy/gradients.html">Gradients</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../functional/ivy/layers.html">Layers</a></li>
@@ -151,16 +106,37 @@
 <li class="toctree-l1"><a class="reference internal" href="../functional/ivy/statistical.html">Statistical</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../functional/ivy/utility.html">Utility</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Classes</span></p>
+<p class="caption" role="heading"><span class="caption-text">Data Classes</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../data_classes/container.html">Container</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../data_classes/array.html">Array</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Framework Classes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../stateful/optimizers.html">Optimizers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../stateful/activations.html">Activations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../stateful/converters.html">Converters</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../stateful/initializers.html">Initializers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../stateful/layers.html">Layers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../stateful/module.html">Module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../stateful/norms.html">Norms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../stateful/optimizers.html">Optimizers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../stateful/initializers.html">Initializers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../stateful/converters.html">Converters</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../stateful/sequential.html">Sequential</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../stateful/helpers.html">Helpers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../stateful/norms.html">Norms</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Nested array</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../nested_array/nested_array.html">Nested array</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Testing</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../testing/assertions.html">Assertions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../testing/available_frameworks.html">Available frameworks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../testing/function_testing.html">Function testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../testing/globals.html">Globals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../testing/hypothesis_helpers.html">Hypothesis helpers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../testing/structs.html">Structs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../testing/test_parameter_flags.html">Test parameter flags</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../testing/testing_helpers.html">Testing helpers</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Docs</span></p>
 <ul>
@@ -207,6 +183,13 @@
 <ol class="arabic">
 <li><p>Build the docker image using the doc-builder Dockerfile</p></li>
 <li><p>Clone or pull the <code class="code docutils literal notranslate"><span class="pre">unifyai/doc-builder</span></code> repository</p></li>
+<li><p>Change to the doc-builder folder</p>
+<blockquote>
+<div><div class="highlight-none notranslate"><div class="highlight"><pre><span></span>cd doc-builder
+</pre></div>
+</div>
+</div></blockquote>
+</li>
 <li><p>Build the docker image using the following command</p>
 <blockquote>
 <div><ol class="arabic">
@@ -233,7 +216,7 @@
 <li><p>Clone or pull the <code class="code docutils literal notranslate"><span class="pre">unifyai/ivy</span></code> repository.</p></li>
 <li><p>Change to the docs folder</p>
 <blockquote>
-<div><div class="highlight-none notranslate"><div class="highlight"><pre><span></span>cd docs
+<div><div class="highlight-none notranslate"><div class="highlight"><pre><span></span>cd ivy\docs
 </pre></div>
 </div>
 </div></blockquote>
@@ -272,7 +255,8 @@
 </section>
 <section id="dockerless-doc-building">
 <h2>Dockerless Doc-building<a class="headerlink" href="#dockerless-doc-building" title="Permalink to this heading"></a></h2>
-<p>First, change to the <cite>docs</cite> folder. Now, we need to create a virtual environment using either <a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">miniconda</a> or <a class="reference external" href="https://docs.python.org/3/library/venv.html">venv</a>:</p>
+<p>To build the Ivy documentation locally, we will need to clone both the <code class="code docutils literal notranslate"><span class="pre">unifyai/doc-builder</span></code> and <code class="code docutils literal notranslate"><span class="pre">unifyai/ivy</span></code> repositories.
+After cloning repos, we need to create a virtual environment using either <a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">miniconda</a> or <a class="reference external" href="https://docs.python.org/3/library/venv.html">venv</a>:</p>
 <section id="using-miniconda">
 <h3>Using miniconda<a class="headerlink" href="#using-miniconda" title="Permalink to this heading"></a></h3>
 <ol class="arabic">
@@ -296,7 +280,7 @@
 </section>
 <section id="using-venv">
 <h3>Using venv<a class="headerlink" href="#using-venv" title="Permalink to this heading"></a></h3>
-<p>This is a builtin package and doesn’t require explicit installation.</p>
+<p>This is a built-in package and doesn’t require explicit installation.</p>
 <ol class="arabic">
 <li><p>Open your terminal/cmd in the directory where you would like to have the folder with the environment files</p></li>
 <li><p>Create the environment by running the command below with a new environment name. We named it <code class="code docutils literal notranslate"><span class="pre">ivy_dev</span></code> like above.</p>
@@ -321,7 +305,11 @@
 </div></blockquote>
 </li>
 </ol>
-<p>Next, execute the following command to build the docs from inside the virtual environment</p>
+</section>
+<section id="id1">
+<h3>Building the docs<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h3>
+<p>After setting up the virtual environment, we can build the documentation locally.
+Move to the <code class="code docutils literal notranslate"><span class="pre">ivy/docs</span></code> folder in a terminal and execute the following command to build the docs from inside the virtual environment.</p>
 <ol class="arabic">
 <li><p>For Windows users</p>
 <blockquote>
@@ -345,6 +333,12 @@
 </div></blockquote>
 </li>
 </ol>
+<p>Assuming that we cloned the <code class="code docutils literal notranslate"><span class="pre">doc-builder</span></code> and <code class="code docutils literal notranslate"><span class="pre">ivy</span></code> repositories in the same folder, we can run <code class="code docutils literal notranslate"><span class="pre">make_docs_without_docker.sh</span></code> as follows:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>bash make_docs_without_docker.sh ../../doc-builder/
+</pre></div>
+</div>
+<p>You will now see the <cite>build</cite> folder where you can find generated <cite>html</cite> files.
+You can open them using any preferred browser and see how your changes affected the documentation pages.</p>
 </section>
 </section>
 <section id="working-of-the-documentation-building-pipeline">
@@ -361,8 +355,8 @@ It uses the unifyai/doc-builder:latest image and creates a container for documen
 It installs the requirements, synchronizes the container’s folder with the project’s build folder.
 It is responsible for executing the rest of the pipeline as it runs the <code class="code docutils literal notranslate"><span class="pre">_make_docs.sh</span></code> and <code class="code docutils literal notranslate"><span class="pre">remove_docs.sh</span></code> files.</p>
 </section>
-<section id="id1">
-<h3>_make_docs.sh:<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h3>
+<section id="id2">
+<h3>_make_docs.sh:<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h3>
 <div class="line-block">
 <div class="line">This file contains commands for executing files involved in generation of the documentation. _ at the start is to indicate that this is a privately accessed file.</div>
 <div class="line">This file fulfils the following purpose</div>
@@ -412,9 +406,7 @@ This involves replacing 3.14 with π, updating paths according to current folder
 <p><strong>Round Up</strong></p>
 <p>This should have hopefully given you a good understanding of the basics for
 building the docs locally.</p>
-<p>If you’re ever unsure of how best to proceed,
-please feel free to engage with the <a class="reference external" href="https://github.com/unifyai/ivy/discussions/1310">doc building discussion</a>,
-or reach out on <a class="reference external" href="https://discord.gg/ZVQdvbzNQJ">discord</a> in the <a class="reference external" href="https://discord.com/channels/799879767196958751/982733967998484520">doc building channel</a>!</p>
+<p>If you have any questions, please feel free to reach out on <a class="reference external" href="https://discord.gg/ZVQdvbzNQJ">discord</a> in the <a class="reference external" href="https://discord.com/channels/799879767196958751/982733967998484520">doc building channel</a>!</p>
 </section>
 </section>
 </section>
@@ -423,14 +415,14 @@ or reach out on <a class="reference external" href="https://discord.gg/ZVQdvbzNQ
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="1_the_basics.html" class="btn btn-neutral float-left" title="The Basics" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="the_basics.html" class="btn btn-neutral float-left" title="The Basics" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="../deep_dive.html" class="btn btn-neutral float-right" title="Deep Dive" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2020, Ivy Team.</p>
+    <p>&#169; Copyright 2020-2023, Ivy Team.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

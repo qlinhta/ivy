@@ -39,11 +39,12 @@ Elementwise
    elementwise/floor_divide.rst
    elementwise/greater.rst
    elementwise/greater_equal.rst
+   elementwise/less_equal.rst
+   elementwise/multiply.rst
    elementwise/isfinite.rst
    elementwise/isinf.rst
    elementwise/isnan.rst
    elementwise/less.rst
-   elementwise/less_equal.rst
    elementwise/log.rst
    elementwise/log10.rst
    elementwise/log1p.rst
@@ -53,7 +54,6 @@ Elementwise
    elementwise/logical_not.rst
    elementwise/logical_or.rst
    elementwise/logical_xor.rst
-   elementwise/multiply.rst
    elementwise/negative.rst
    elementwise/not_equal.rst
    elementwise/positive.rst
@@ -72,4 +72,25 @@ Elementwise
    elementwise/erf.rst
    elementwise/maximum.rst
    elementwise/minimum.rst
+   elementwise/reciprocal.rst
+   elementwise/deg2rad.rst
+   elementwise/rad2deg.rst
+   elementwise/trunc_divide.rst
+   elementwise/isreal.rst
 
+.. _`discord`: https://discord.gg/ZVQdvbzNQJ 
+.. _`elementwise forum`: https://discord.com/channels/799879767196958751/1028298919488278589
+.. _`elementwise forum`: https://discord.com/channels/799879767196958751/1028298919488278589
+.. _`elementwise forum`: https://discord.com/channels/799879767196958751/1028298919488278589
+.. _`elementwise forum`: https://discord.com/channels/799879767196958751/1028298919488278589
+.. _`elementwise forum`: https://discord.com/channels/799879767196958751/1028298919488278589
+.. _`elementwise forum`: https://discord.com/channels/799879767196958751/1028298919488278589
+.. _`elementwise forum`: https://discord.com/channels/799879767196958751/1028298919488278589
+.. _`elementwise channel`: https://discord.com/channels/799879767196958751/1000043825085026394
+.. _`elementwise channel`: https://discord.com/channels/799879767196958751/1000043825085026394
+.. _`elementwise channel`: https://discord.com/channels/799879767196958751/1000043825085026394
+.. _`elementwise channel`: https://discord.com/channels/799879767196958751/1000043825085026394
+.. _`elementwise channel`: https://discord.com/channels/799879767196958751/1000043825085026394
+.. _`elementwise channel`: https://discord.com/channels/799879767196958751/1000043825085026394
+.. _`elementwise channel`: https://discord.com/channels/799879767196958751/1000043825085026394
+This should have hopefully given you an overview of the elementwise submodule,If you have any questions, please feel free to reach out on our `discord`_ in the `elementwise channel`_ or in the `elementwise forum`_!

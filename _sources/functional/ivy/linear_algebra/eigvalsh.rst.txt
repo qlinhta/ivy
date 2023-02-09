@@ -4,10 +4,14 @@ eigvalsh
 .. autofunction:: ivy.functional.ivy.linear_algebra.eigvalsh
 
 .. autofunction:: ivy.array.array_methods.eigvalsh
+
+.. autofunction:: ivy.container.container_methods.static_eigvalsh
+
+.. autofunction:: ivy.container.container_methods.eigvalsh
 |
 | **Supported Frameworks:**
 
-|jax_logo| |tf_logo| |pytorch_logo| |mxnet_logo| |numpy_logo|
+|jax_logo| |tf_logo| |pytorch_logo| |numpy_logo|
 
 .. |jax_logo| image:: ../../../logos/supported/jax_logo.png
    :target: https://jax.readthedocs.io
@@ -17,9 +21,6 @@ eigvalsh
 
 .. |pytorch_logo| image:: ../../../logos/supported/pytorch_logo.png
    :target: https://pytorch.org
-
-.. |mxnet_logo| image:: ../../../logos/supported/mxnet_logo.png
-   :target: https://mxnet.apache.org
 
 .. |numpy_logo| image:: ../../../logos/supported/numpy_logo.png
    :target: https://numpy.org
@@ -32,4 +33,6 @@ eigvalsh
 
    eigvalsh/eigvalsh_functional.rst
    eigvalsh/eigvalsh_array.rst
+   eigvalsh/eigvalsh_container.rst
+   eigvalsh/static_eigvalsh_container.rst
 

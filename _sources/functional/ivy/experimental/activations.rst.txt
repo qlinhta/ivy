@@ -1,0 +1,19 @@
+Activations
+===========
+
+.. automodule:: ivy.functional.ivy.experimental.activations
+    :members:
+    :special-members: __init__
+    :undoc-members:
+    :show-inheritance:
+
+
+.. toctree::
+   :hidden:
+   :maxdepth: -1
+   :caption: Activations
+
+   activations/logit.rst
+   activations/prelu.rst
+   activations/thresholded_relu.rst
+

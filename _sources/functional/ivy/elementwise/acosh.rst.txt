@@ -3,25 +3,15 @@ acosh
 
 .. autofunction:: ivy.functional.ivy.elementwise.acosh
 
-.. autofunction:: ivy.array.array_methods.acos
-
-.. autofunction:: ivy.array.array_methods.cosh
-
-.. autofunction:: ivy.array.array_methods.cos
-
 .. autofunction:: ivy.array.array_methods.acosh
 
-.. autofunction:: ivy.container.container_methods.acos
-
-.. autofunction:: ivy.container.container_methods.cosh
-
-.. autofunction:: ivy.container.container_methods.cos
-
 .. autofunction:: ivy.container.container_methods.acosh
+
+.. autofunction:: ivy.container.container_methods.static_acosh
 |
 | **Supported Frameworks:**
 
-|jax_logo| |tf_logo| |pytorch_logo| |mxnet_logo| |numpy_logo|
+|jax_logo| |tf_logo| |pytorch_logo| |numpy_logo|
 
 .. |jax_logo| image:: ../../../logos/supported/jax_logo.png
    :target: https://jax.readthedocs.io
@@ -31,9 +21,6 @@ acosh
 
 .. |pytorch_logo| image:: ../../../logos/supported/pytorch_logo.png
    :target: https://pytorch.org
-
-.. |mxnet_logo| image:: ../../../logos/supported/mxnet_logo.png
-   :target: https://mxnet.apache.org
 
 .. |numpy_logo| image:: ../../../logos/supported/numpy_logo.png
    :target: https://numpy.org
@@ -47,4 +34,5 @@ acosh
    acosh/acosh_functional.rst
    acosh/acosh_array.rst
    acosh/acosh_container.rst
+   acosh/static_acosh_container.rst
 

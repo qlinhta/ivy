@@ -5,13 +5,15 @@
    :maxdepth: -1
    :caption: Ivy
 
+   ivy/experimental.rst
    ivy/activations.rst
-   ivy/compilation.rst
    ivy/constants.rst
+   ivy/control_flow_ops.rst
    ivy/creation.rst
    ivy/data_type.rst
    ivy/device.rst
    ivy/elementwise.rst
+   ivy/experimental.rst
    ivy/general.rst
    ivy/gradients.rst
    ivy/layers.rst

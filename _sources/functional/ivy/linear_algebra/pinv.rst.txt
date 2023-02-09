@@ -3,13 +3,15 @@ pinv
 
 .. autofunction:: ivy.functional.ivy.linear_algebra.pinv
 
-.. autofunction:: ivy.array.array_methods.inv
-
 .. autofunction:: ivy.array.array_methods.pinv
+
+.. autofunction:: ivy.container.container_methods.static_pinv
+
+.. autofunction:: ivy.container.container_methods.pinv
 |
 | **Supported Frameworks:**
 
-|jax_logo| |tf_logo| |pytorch_logo| |mxnet_logo| |numpy_logo|
+|jax_logo| |tf_logo| |pytorch_logo| |numpy_logo|
 
 .. |jax_logo| image:: ../../../logos/supported/jax_logo.png
    :target: https://jax.readthedocs.io
@@ -19,9 +21,6 @@ pinv
 
 .. |pytorch_logo| image:: ../../../logos/supported/pytorch_logo.png
    :target: https://pytorch.org
-
-.. |mxnet_logo| image:: ../../../logos/supported/mxnet_logo.png
-   :target: https://mxnet.apache.org
 
 .. |numpy_logo| image:: ../../../logos/supported/numpy_logo.png
    :target: https://numpy.org
@@ -34,4 +33,6 @@ pinv
 
    pinv/pinv_functional.rst
    pinv/pinv_array.rst
+   pinv/pinv_container.rst
+   pinv/static_pinv_container.rst
 
