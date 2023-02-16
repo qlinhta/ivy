@@ -18,6 +18,7 @@
         <script src="../../../../_static/underscore.js"></script>
         <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../../../_static/doctools.js"></script>
+        <script src="../../../../_static/sphinx_highlight.js"></script>
     <script src="../../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" />
@@ -102,6 +103,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../prelu.html">prelu</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../thresholded_relu.html">thresholded_relu</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../msort.html">msort</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lexsort.html">lexsort</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../triu_indices.html">triu_indices</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../vorbis_window.html">vorbis_window</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../hann_window.html">hann_window</a></li>
@@ -163,6 +165,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../gradient.html">gradient</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../xlogy.html">xlogy</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../real.html">real</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../binarizer.html">binarizer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../isin.html">isin</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../is_native_dtype.html">is_native_dtype</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../SparseArray.html">SparseArray</a></li>
@@ -225,6 +228,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../prelu.html">prelu</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../thresholded_relu.html">thresholded_relu</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../msort.html">msort</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lexsort.html">lexsort</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../triu_indices.html">triu_indices</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../vorbis_window.html">vorbis_window</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../hann_window.html">hann_window</a></li>
@@ -286,6 +290,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../gradient.html">gradient</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../xlogy.html">xlogy</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../real.html">real</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../binarizer.html">binarizer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../isin.html">isin</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../is_native_dtype.html">is_native_dtype</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../SparseArray.html">SparseArray</a></li>
@@ -393,7 +398,8 @@ with minimal changes.</p>
 <blockquote>
 <div><p>b=ivy.arange(3))</p>
 </div></blockquote>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ivy</span><span class="o">.</span><span class="n">Container</span><span class="o">.</span><span class="n">static_vstack</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="n">ivy</span><span class="o">.</span><span class="n">Container</span><span class="o">.</span><span class="n">static_vstack</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
 <span class="go">{</span>
 <span class="go">    a: ivy.array([[1, 2, 3],</span>
 <span class="go">                  [0, 0, 0]]),</span>
